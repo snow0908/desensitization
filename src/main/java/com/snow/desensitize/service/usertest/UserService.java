@@ -3,6 +3,8 @@ package com.snow.desensitize.service.usertest;
 import com.snow.desensitize.entity.usertest.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -13,5 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface UserService extends IService<User> {
     User Sel(int id);
-
+    List<User> selectlist();
 }
